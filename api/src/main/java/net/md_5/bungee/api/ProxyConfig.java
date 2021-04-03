@@ -71,6 +71,8 @@ public interface ProxyConfig
      */
     int getPlayerLimit();
 
+    String getPlayerNameSuffix();
+
     /**
      * A collection of disabled commands.
      *

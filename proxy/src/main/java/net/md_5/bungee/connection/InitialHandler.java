@@ -353,6 +353,7 @@ public class InitialHandler extends PacketHandler implements PendingConnection
     {
         Preconditions.checkState( thisState == State.USERNAME, "Not expecting USERNAME" );
         this.loginRequest = loginRequest;
+        this.name = this.loginRequest.getData() + BungeeCord.getInstance().config.getPlayerNameSuffix();
 
         if ( getName().contains( "." ) )
         {
